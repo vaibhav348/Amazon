@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+<!-- styletag for sliding effect
+ -->
+
+ <style>
+    * 
+    
+    
+    /* Slideshow container */
+  
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
+                </div>
+
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-singin border">
+                <p><span>Hello, Sing in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+
+        </div>
+        <!-- panel start -->
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"> </i>
+                All
+            </div>
+
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p> Sell</p>
+            </div>
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+
+
+
+        </div>
+    </header>
+    
+   
+
+      
+
+            
+
+
+
+
+
+           
+    <div class="hero-section">
+                    <img class="hero-img"  src="1.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="hero-section">
+                    <img class="hero-img"  src="2.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="hero-section">
+                    <img class="hero-img"  src="3.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="hero-section">
+                      <img class="hero-img"  src="4.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                    <div class="hero-section">
+                      <img class="hero-img"  src="hero_image.jpg" style="width:100%">
+                      <div class="text"></div>
+            
+                 
+                    </div>
+
+
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+
+
+
+
+
+
+
+    
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Bluetooth Calling Smartwatch starts at ₹1,999</h2>
+                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Up to 70% off | Clearance store</h2>
+                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Up to 30% off on medicines | Free delivery for prime</h2>
+                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Baby diapers & wipes at great prices</h2>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Gardening essentials | Starting ₹99</h2>
+                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Bestsellers in Women's Indian Clothing</h2>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Relive Your First Love only on miniTV</h2>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <p>Watch for FREE | miniTV</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back To TOP
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p> Get to Know Us</p>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+                <a href="">Press Releases</a>
+                <a href="">Amazon Science</a>
+            </ul>
+            <ul>
+             
+
+                <p>Connect with Us</p>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+            </ul>  
+            <ul>
+               
+               
+                
+                
+                
+                
+               
+
+                <p>  Make Money with Us</p>
+                <a href=""> Sell on Amazon</a>
+                <a href="">Sell under Amazon Accelerator</a>
+                <a href="">Protect and Build Your Brand</a>
+                <a href="">Amazon Global Selling</a>
+                <a href="">Become an Affiliate</a>
+                <a href="">Fulfilment by Amazon</a>
+                <a href=""> Advertise Your Products</a>
+                <a href="">Amazon Pay on Merchants</a>
+            </ul>
+            <ul>
+                
+                
+                <p> Let Us Help You</p>
+                <a href="">Your Account</a>
+                <a href="">Returns Centre</a>
+               <a href="">COVID-19 and Amazon</a>
+               <a href="">100% Purchase Protection</a>
+               <a href="">Amazon App Download</a> 
+               <a href="">Help</a>
+                
+            </ul>
+        </div>
+       <div class="foot-panel3">
+        <div class="logo"></div>
+       </div>
+       <div class="foot-panel4">
+        <div class="pages">
+            <a >Conditions of Use & Sale</a>
+            <a >Privacy Notice</a>
+            <a >clone by vaibhav pandey</a>
+        </div>
+        <div class="copyright">
+            © 1996-2023, Amazon.com, Inc. or its affiliates
+        </div>
+       </div>
+    </footer>
+
+<!-- scrpit for slied -->
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("hero-section");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+
+</html>
